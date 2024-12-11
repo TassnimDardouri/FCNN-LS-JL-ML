@@ -8,7 +8,9 @@ from scipy.io import loadmat
 
 import sys 
 
-sys.path.append('/data-nfs/tasnim/codes')
+from os.path import abspath, dirname
+
+sys.path.append(dirname(abspath(__file__)))
 
 from utils.data_loader import full_loader
 from utils.train_parser import Options
